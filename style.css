@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+header{
+    width: 100%;
+    background-color: #f1c40f;
+    display: flex;
+    padding: 5px;
+
+}
+
+header img{
+    width: 60px;
+ 
+}
+
+header h3{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 6%;
+}
+
+header .nav-bar ul{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60%;
+   
+}
+
+header .nav-bar ul li{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+
+
+header .nav-bar ul li a{
+    color: white;
+}
+header .nav-bar ul a:hover{
+    color: black;
+}
+header .nav-bar ul li .active{
+    color: #444;
+}
+
+
+.home .btn{
+    position: absolute;
+    width: 150px;
+    background-color: #f1c40f;
+    padding: 15px;
+    left: 40%;
+    margin-top: 25px;
+    border: none;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* hero section starts here */
+
+#hero{
+    width: 100%;
+    position: absolute;
+    background-image: url(img/home.jpg) ;
+    background-size: cover;
+    background-position: left center;
+    position: fixed;
+
+}
+hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:crimson;
+    opacity: 0.8;
+
+}
+
+/* start hero section */
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+    
+}
+#hero h3{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 1s;
+
+}
+#hero h3:nth-child(1){
+    animation-delay: 1s;
+}
+#hero h3:nth-child(2){
+    animation-delay: 2s;
+}
+#hero h3:nth-child(3){
+    animation-delay: 3s;
+}
+#hero h3:nth-child(4){
+    animation-delay: 4s;
+}
+#hero h3:nth-child(5){
+    animation: text_reveal_name 5s ease forwards;
+    animation-delay: 5s;
+}
+
+#hero h3 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(139, 10, 36);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 3s;
+}
+#hero h3:nth-child(1) span{
+    animation-delay: 1.5s;
+}
+#hero h3:nth-child(2) span{
+    animation-delay: 2.5s;
+}
+#hero h3:nth-child(3) span{
+    animation-delay: 3.5s;
+}
+#hero h3:nth-child(4) span{
+    animation-delay: 4.5s;
+}
+#hero h3:nth-child(5) span{
+    animation-delay: 5.5s;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px  30px;
+    color: crimson;
+    background-color: transparent;
+    border:2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: 3s ease background-color;
+
+}
+
+#hero.cta:hover{
+    color: white;
+    background-color:crimson;
+
+}
+/* end hero section */
+
+
+/* keyframe */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;  
+    }
+    100%{
+        width: 0;
+        left: 100%;
+
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+
+    }
+}
+    
+  
+@keyframes text_reveal_name{
+    100%{
+        color: red;
+        font-weight: 500px;
+
+    }
+}
+/* keyframes */
+
+
+
+
+/* about section starts here */
+.about img{
+    width: 38%;
+    height: 70%;
+    border-radius: 25px;
+    position: absolute;
+    float: right;
+    margin-left: 80%;
+    padding: 10px;
+    right: 10px;
+    transition: 2s ease;
+    cursor: pointer;
+}
+
+.about .btn{
+    width: 150px;
+    background-color: #f1c40f;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+.about p{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: bolder;
+    line-height: 40px;
+    width: 55%;
+}
+/* teachers section starts here */
+
+.T{
+  text-align: center;
+  margin-top: 5px;
+
+}
+.section .box-container{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.section .box-container .gallary{
+    width: 280px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 15px;
+    background-color: #f1c40f;
+}
+
+.section .box-container .gallary img{
+    width: 280px;
+    height: 280px;
+}
+
+.section .box-container .gallary .h{
+    background-color: #f1c40f;
+    text-align: center;
+    line-height: 30px;
+    
+    
+}
+
+
+
+
+/* courses section starts here */
+.courses{
+    background-color: aqua;
+
+}
+
+.courses .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses .box-container .box{
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 18px;
+}
+.courses .box-container .box img{
+    width: 280px;
+}
+.courses .box-container .box .price{
+    background: #f1c40f;
+    width: 55px;
+    height: 55px;
+    border-radius: 700px;
+    float: right;
+    margin-top: -50px;
+    position: relative;
+    margin-right: 30px;
+}
+.courses .box-container .box .price h1{
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+.courses .box-container .box .rate{
+    width: 140px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.courses .box-container .box .title{
+    color: #444;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -5px;
+    text-decoration: underline;
+}
+
+.courses .box-container .box p{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+hr{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.courses .box-container .box .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.courses .box-container .box .info h2{
+    padding: 18px;
+    font-size: 15px;
+}
+
+/* countecs section starts here */
+.contect{
+    background-color: #111;
+    background-size: cover;
+    position: fixed;
+}
+
+.contect .heading{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+}
+.contect .rows{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contect .rows form{
+    flex: 1px;
+    background: #222;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.contect .rows form .box{
+    width: 45%;
+    height: 55px;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    border: 1px solid #eee;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contect .rows form .address{
+    width: 100%;
+    height: 140px;
+}
+
+.contect .rows form .send{
+    background: orange;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 45%;
+}
+
+      
+    @media(max-width:768px) {
+
+        header{
+            width: 100%;
+            
+            
+        } 
+        header .nav-bar ul{
+            width: 200%;
+           position: fixed;
+            top: 25%;
+            right: 70%;
+            padding: 20px;
+            
+            
+        
+            background-color: crimson;
+          
+        }
+        header .nav-bar ul li{
+            font-size: 40px;
+            padding-left: 20px;
+        }
+
+
+        header img{
+            width: 60px;
+            position: absolute;
+            margin-left: 40%;
+
+        }
+
+        header h3{
+            display: none;
+        }
+
+        section{
+            min-height: 90vh;
+        }
+        .home{
+            position: absolute;
+            width: 100%;
+             height: 80%;
+    } 
+    
+    .home h1{
+        padding: 10px;
+        font-size: 20px;
+        margin-top: -15%;
+        margin-right: 20%;
+    }
+
+    .home p{
+        padding: 10px;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-right:10%;
+    }
+
+    .home .btn{
+        position: absolute;
+        padding: 10px;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-right: 300%;
+    }
+            
+
+    
+}
